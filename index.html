@@ -1823,7 +1823,7 @@ function selectSymptom(button, treatmentId) {
                 text: `【予約フォーム】\nお名前：${formData.name}\n電話番号：${formData.phone}\nご来店回数：${formData.visitCount}\nメニュー：${formData.selectedSymptom},${formData.irradiationsCount}\n希望日時：\n ${formData.dates[0]}\nメッセージ：${formData.message}`
             }]).then(() => {
                 /* メッセージ送信成功時の処理 */
-                alert('当日キャンセルは無いようにお願いいたします。キャンセル料発生いたします。');
+                alert('【キャンセルについてのご案内】\n ご予約後のキャンセル・変更には以下の通りキャンセル料が発生します。\n 7〜4日前：30％\n 3〜2日前：50％\n 前日・当日：100％\n 多くのお客様に気持ちよくご利用いただくためのルールです🌿\n ご理解・ご協力をお願いいたします🙇‍♀️');
                 /* LIFFウィンドウを閉じる */
                 liff.closeWindow();
             }).catch((err) => {
@@ -1831,7 +1831,7 @@ function selectSymptom(button, treatmentId) {
                 console.error('メッセージの送信に失敗しました', err);
             });
         }
-
+        
         function formatDate(dateStr) {
             if (!dateStr) return '';
             const date = new Date(dateStr);
