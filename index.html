@@ -944,7 +944,7 @@
                 <span class="highlight-text">◆脱毛男性◆</span>
             </div>
             <div class="symptoms">
-                <button type="button" onclick="selectSymptom(this, 'treatment10')" data-price="6000">１箇所（男性）</button>
+                <button type="button" onclick="selectSymptom(this, 'treatment10')" data-price="0">１箇所（男性）</button>
                 <button type="button" onclick="selectSymptom(this, 'treatment11')" data-price="26000">全身メンズ脱毛（男性）</button>
                 <button type="button" onclick="selectSymptom(this, 'treatment12')" data-price="32000">全身＋顔・VIO付きメンズ脱毛（男性）</button>
                 <button type="button" onclick="selectSymptom(this, 'treatment13')" data-price="35000">全身＋顔・VIO付き(ハイジ脱毛)　（男性）</button>
@@ -1372,7 +1372,7 @@
 
         function updateDisplayInfo() {
             const name = document.getElementById('name').value;
-            const visitCountText = visitCount ? `<span style="color:#13ca5e;"><strong>【ご来店回数】</strong></span><br>・${visitCount}` : '・来店回数が未選択です';
+            const visitCountText = visitCount ? `<span style="color:#13ca5e;"><strong>【性別】</strong></span><br>・${visitCount}` : '・性別が未選択です';
             const selectedMenuText = selectedMenu ? `<span style="color:#13ca5e;"><strong>【コース】</strong></span><br>・${selectedMenu}` : '・コースが未選択です';
 
             const selectedSymptomText = selectedSymptom.length > 0
